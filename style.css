@@ -1,0 +1,137 @@
+html, body {
+    height: 100%; /* S'assure que le body occupe 100% de la hauteur de la fenêtre */
+    margin: 0; /* Enlève les marges par défaut */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #5c738ba2; /* Arrière-plan principal */
+    display: flex;
+    flex-direction: column; /* Permet d'organiser les éléments en colonne */
+    opacity: 1; /* Le corps est visible dès le début */
+    transition: opacity 1s ease-in; /* Transition douce pour l'apparition */
+}
+
+h3{
+    margin-left: 700px;
+    margin-top: 80px;
+    font-size:x-large;
+    
+}
+
+header {
+    background-color: #22bea4c9;
+    color: #03030ef5;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgba(143, 206, 201, 0.671);
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #2C3E50;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Ajout de la transition pour les effets de survol */
+}
+
+nav ul li a:hover {
+    background-color: rgba(29, 161, 150, 0.671);
+    transform: scale(1.05); /* Légère augmentation de taille au survol */
+}
+
+main {
+    padding: 20px;
+    background-color: #17989cbe;
+    flex: 1; /* Permet à main de prendre tout l'espace disponible */
+}
+
+p {
+background-color:  #179c91fb;;
+
+}
+
+.gallery {
+    margin-top: 20px;
+    display: flex; /* Utilisation de Flexbox pour centrer la galerie */
+    justify-content: center; /* Centre la galerie horizontalement */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* Espace entre les colonnes et les rangées */
+    max-width: 1300px; /* Limite la largeur maximale de la grille */
+    width: 1300%; /* Prend toute la largeur disponible */
+    margin-top: 75px;
+}
+
+.grid a {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid img {
+    width: 100%; /* Ajuste la largeur à 100% du conteneur */
+    height: 250px; /* Augmente la hauteur à 250px */
+    object-fit: cover; /* Remplit l'élément sans déformer l'image */
+    border-radius: 10px;
+    border: 3px solid #333;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition pour les effets de survol */
+}
+
+.grid a:hover img {
+    transform: scale(1.05); /* Agrandissement au survol */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Ombre au survol */
+}
+
+.large {
+    grid-column: span 2; /* Fait que l'image prend l'espace de deux colonnes */
+}
+
+/* Ajout de styles pour les images sur les pages individuelles */
+.responsive-image {
+    width: 100%; /* S'assure que l'image prend toute la largeur disponible */
+    height: auto; /* La hauteur s'ajuste automatiquement pour maintenir les proportions */
+    max-width: 600px; /* Limite la largeur maximale pour éviter qu'elle ne devienne trop grande */
+    border-radius: 10px; /* Ajoute un arrondi aux coins */
+    margin: 20px 0; /* Ajoute un espacement autour de l'image */
+    margin-left: 500px;
+   
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Change de fixed à relative pour qu'il ne soit pas collé en bas */
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth; /* Active le défilement doux */
+}
+
+h3{
+position: center;
+
+}
